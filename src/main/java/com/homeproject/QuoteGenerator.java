@@ -2,7 +2,7 @@ package com.homeproject;
 
 import java.util.Random;
 
-public class QuoteRandom {
+public class QuoteGenerator {
 
 
 
@@ -12,7 +12,9 @@ public class QuoteRandom {
                 "upi-dupi",
                 "Chih pih-pih"
         };
+
         int index = new Random().nextInt(qoute.length);
+
         return qoute[index];
     }
 }
