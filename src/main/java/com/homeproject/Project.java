@@ -6,14 +6,14 @@ package com.homeproject;
 public class Project {
 
     private String name;
-    private int orientalSum;
+    private int amount;
     private int sumAlready;
     private int days;
     private Category category;
 
     public Project(String name, int orientalSum, int days) {
         this.name = name;
-        this.orientalSum = orientalSum;
+        this.amount = orientalSum;
         this.days = days;
     }
 
@@ -29,12 +29,12 @@ public class Project {
         this.name = name;
     }
 
-    public int getOrientalSum() {
-        return orientalSum;
+    public int getAmount() {
+        return amount;
     }
 
-    public void setOrientalSum(int orientalSum) {
-        this.orientalSum = orientalSum;
+    public void setAmount(int amount) {
+        this.amount = amount;
     }
 
     public int getSumAlready() {
@@ -51,5 +51,9 @@ public class Project {
 
     public void setDays(int days) {
         this.days = days;
+    }
+
+    public Category getCategory() {
+        return category;
     }
 }

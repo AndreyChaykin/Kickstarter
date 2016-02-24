@@ -6,7 +6,7 @@ public class QuoteGenerator {
 
 
 
-    String quoteRandom() {
+    String nextQuote() {
         String[] qoute = new String[]{
                 "Tra la la",
                 "upi-dupi",

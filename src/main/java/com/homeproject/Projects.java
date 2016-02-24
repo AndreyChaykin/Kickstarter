@@ -12,4 +12,14 @@ public class Projects {
         projects[count] = project;
         count++;
     }
+
+
+    public Category getProject(Category category) {
+        for (int i = 0; i < projects.length; i++) {
+            if (projects[i].getCategory().equals(category)) {
+                return projects[i].getCategory();
+            }
+        }
+        return null;
+    }
 }

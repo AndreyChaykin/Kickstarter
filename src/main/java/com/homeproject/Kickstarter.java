@@ -4,12 +4,9 @@ package com.homeproject;
 import java.io.*;
 import java.util.Arrays;
 
-/**
- * Created by andrey on 23.02.2016.
- */
 public class Kickstarter {
 
-    Categories categories;
+    private Categories categories;
     private Projects projects;
 
     public Kickstarter(Categories categories, Projects projects) {
@@ -28,7 +25,6 @@ public class Kickstarter {
         categories.add(categoryTwo);
         categories.add(categoryThree);
 
-
         Project projectOne = new Project("new album", 1000, 15);
         Project projectTwo = new Project("new song", 200, 10);
 
@@ -41,37 +37,36 @@ public class Kickstarter {
 
         Kickstarter application = new Kickstarter(categories, projects);
 
-        application.printQuote();
-        System.out.println(application.choiceCategory());
+        application.run();
+
     }
 
-    private void printQuote() {
-        System.out.println(new QuoteGenerator().quoteRandom());
-    }
+    public void run() {
+        printQuote();
+        System.out.println("Please, make choice:");
+        System.out.println(Arrays.toString(categories.getCategories()));
 
-    private Category choiceCategory() {
+        int index = 0;
         try {
-            System.out.println("Please, make choice:");
-            System.out.println(Arrays.toString(categories.getGategoriesNames()));
-
-            int number = enterNumber();
-
-            Category[] result = categories.getCategories();
-
-            if(number < categories.getCategories().length) {
-                return result[number];
-            }
+            index = enterNumber();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return null;
+        String categoryName = categories.getName(index);
+        Category category = categories.getCategoryByName(categoryName);
+        System.out.println(projects.getProject(category));
+
     }
 
+
+
+    private void printQuote() {
+        System.out.println(new QuoteGenerator().nextQuote());
+    }
+
+
     private int enterNumber() throws IOException {
-
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        int result = Integer.parseInt(bf.readLine());
-
-        return result;
+        return Integer.parseInt(bf.readLine());
     }
 }

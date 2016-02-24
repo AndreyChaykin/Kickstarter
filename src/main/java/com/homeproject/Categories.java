@@ -3,7 +3,6 @@ package com.homeproject;
 public class Categories {
 
     Category[] categories = new Category[10];
-
     private int count = 0;
 
     public void add(Category category) {
@@ -11,16 +10,21 @@ public class Categories {
         count++;
     }
 
-    public String[] getGategoriesNames() {
-        String[] result = new String[count];
-
-        for (int i = 0; i < count; i++) {
-            result[i] = String.valueOf(i) + " - " + categories[i].getName();
-        }
-        return result;
+    public String getName(int index) {
+        return categories[index].getName();
     }
 
     public Category[] getCategories() {
         return categories;
+    }
+
+
+    public Category getCategoryByName(String name) {
+        for (int i = 0; i < categories.length; i++) {
+            if (categories[i].getName().equals(name)) {
+                return categories[i];
+            }
+        }
+        return null;
     }
 }
