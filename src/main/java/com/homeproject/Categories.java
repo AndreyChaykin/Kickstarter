@@ -15,7 +15,7 @@ public class Categories {
         String[] result = new String[count];
 
         for (int i = 0; i < count; i++) {
-            result[i] = categories[i].getName();
+            result[i] = String.valueOf(i) + " - " + categories[i].getName();
         }
         return result;
     }
