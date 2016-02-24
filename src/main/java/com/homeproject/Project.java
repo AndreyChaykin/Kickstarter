@@ -20,14 +20,6 @@ public class Project {
         sumExist = 0;
     }
 
-    public void setCategory(Category category) {
-        this.category = category;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
     public String getName() {
         return name;
     }
@@ -58,6 +50,18 @@ public class Project {
 
     public void setDays(int days) {
         this.days = days;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public Category getCategory() {
