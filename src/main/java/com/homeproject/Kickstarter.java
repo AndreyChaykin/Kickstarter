@@ -54,8 +54,9 @@ public class Kickstarter {
         }
         String categoryName = categories.getName(index);
         Category category = categories.getCategoryByName(categoryName);
-        System.out.println(projects.getProject(category));
+        Project[] selectedProjects = projects.getProjects(category);
 
+        System.out.println(Arrays.toString(selectedProjects));
     }
 
 

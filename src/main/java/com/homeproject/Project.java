@@ -56,4 +56,15 @@ public class Project {
     public Category getCategory() {
         return category;
     }
+
+    @Override
+    public String toString() {
+        return "Project{" +
+                "name='" + name + '\'' +
+                ", amount=" + amount +
+                ", sumAlready=" + sumAlready +
+                ", days=" + days +
+                ", category=" + category +
+                '}';
+    }
 }
