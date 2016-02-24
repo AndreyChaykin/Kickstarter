@@ -25,8 +25,8 @@ public class Kickstarter {
         categories.add(categoryTwo);
         categories.add(categoryThree);
 
-        Project projectOne = new Project("new album", 1000, 15);
-        Project projectTwo = new Project("new song", 200, 10);
+        Project projectOne = new Project("new album", 1000, 15, "new rock album");
+        Project projectTwo = new Project("new song", 200, 10, "write first song");
 
         projectOne.setCategory(categoryThree);
         projectTwo.setCategory(categoryThree);

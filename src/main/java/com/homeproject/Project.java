@@ -7,18 +7,25 @@ public class Project {
 
     private String name;
     private int amount;
-    private int sumAlready;
+    private int sumExist;
     private int days;
     private Category category;
+    private String description;
 
-    public Project(String name, int orientalSum, int days) {
+    public Project(String name, int orientalSum, int days, String description) {
         this.name = name;
         this.amount = orientalSum;
         this.days = days;
+        this.description = description;
+        sumExist = 0;
     }
 
     public void setCategory(Category category) {
         this.category = category;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     public String getName() {
@@ -37,12 +44,12 @@ public class Project {
         this.amount = amount;
     }
 
-    public int getSumAlready() {
-        return sumAlready;
+    public int getSumExist() {
+        return sumExist;
     }
 
-    public void setSumAlready(int sumAlready) {
-        this.sumAlready = sumAlready;
+    public void setSumExist(int sumExist) {
+        this.sumExist = sumExist;
     }
 
     public int getDays() {
@@ -61,10 +68,7 @@ public class Project {
     public String toString() {
         return "Project{" +
                 "name='" + name + '\'' +
-                ", amount=" + amount +
-                ", sumAlready=" + sumAlready +
-                ", days=" + days +
-                ", category=" + category +
+                ", description='" + description + '\'' +
                 '}';
     }
 }
