@@ -26,6 +26,10 @@ public class Kickstarter {
                 while (true) {
                     askProject(foundedProjects);
                     int projectIndex = selectMenu();
+                    if(projectIndex < 0 || projectIndex >= foundedProjects.length) {
+                        System.out.println("Wrong number of project, Please, try again!");
+                        continue;
+                    }
                     Project project = foundedProjects[projectIndex];
                     chooseProject(project);
                     printProjectDetail(project);
@@ -91,7 +95,6 @@ public class Kickstarter {
 
     private Category chooseCategory(int index) {
         System.out.println("You have been select:");
-        Category category = categories.getCategory(index);
-        return category;
+        return categories.getCategory(index);
     }
 }
