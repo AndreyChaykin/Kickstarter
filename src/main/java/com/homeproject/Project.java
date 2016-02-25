@@ -11,6 +11,9 @@ public class Project {
     private int days;
     private Category category;
     private String description;
+    private String questionAnswers;
+    private String demoVideo;
+    private String history;
 
     public Project(String name, int orientalSum, int days, String description) {
         this.name = name;
@@ -74,5 +77,17 @@ public class Project {
                 "name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 '}';
+    }
+
+    public String getQuestionAnswers() {
+        return questionAnswers;
+    }
+
+    public String getDemoVideo() {
+        return demoVideo;
+    }
+
+    public String getHistory() {
+        return history;
     }
 }

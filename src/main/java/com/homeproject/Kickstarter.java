@@ -22,15 +22,17 @@ public class Kickstarter {
                 askCategory();
                 int categoryIndex = selectMenu();
                 Category category = chooseCategory(categoryIndex);
-
-                printProjects(category);
+                Project[] selectedProjects = printProjects(category);
                 while (true) {
-                    System.out.println("Please, select project:");
+                    askProject();
+                    System.out.println("Please, select project");
+
                     int projectIndex = selectMenu();
                     Project project = chooseProject(projectIndex);
 
                     printProject(project);
 
+                    printProjectDetail(project);
                 }
 //                Project[] selectedProjects = printProjects(category);
 //                int projectIndex = selectMenu();
@@ -40,6 +42,18 @@ public class Kickstarter {
                 e.printStackTrace();
             }
         }
+    }
+
+    private void askProject() {
+        System.out.println("Please, select category:");
+        System.out.println(Arrays.toString(categories.getCategories()));
+    }
+
+    private void printProjectDetail(Project project) {
+        printProject(project);
+        System.out.println(project.getHistory());
+        System.out.println(project.getDemoVideo());
+        System.out.println(project.getQuestionAnswers() + "\n");
     }
 
     private Project[] printProjects(Category category) {
@@ -59,7 +73,7 @@ public class Kickstarter {
         System.out.println("Project name: " + project.getName());
         System.out.println("About: " + project.getDescription());
         System.out.println("Sum of project: " + project.getAmount());
-        System.out.println("Sum exist: " + project.getSumExist() + "\n");
+        System.out.println("Sum exist: " + project.getSumExist());
     }
 
 
