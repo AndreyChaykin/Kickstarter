@@ -19,5 +19,7 @@ public class Categories {
     }
 
 
-
+    public int size() {
+        return count-1;
+    }
 }
