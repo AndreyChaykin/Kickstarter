@@ -22,15 +22,14 @@ public class Kickstarter {
                 askCategory();
                 int categoryIndex = selectMenu();
                 Category category = chooseCategory(categoryIndex);
-                if(category == null) {
+                if (category == null) {
                     continue;
                 }
                 Project[] foundedProjects = printProjects(category);
                 while (true) {
                     askProject(foundedProjects);
                     int projectIndex = selectMenu();
-                    if(projectIndex < 0 || projectIndex >= foundedProjects.length) {
-                        System.out.println("Wrong number of project, Please, try again!");
+                    if (chooseProject(foundedProjects, projectIndex)) {
                         continue;
                     }
                     Project project = foundedProjects[projectIndex];
@@ -41,6 +40,14 @@ public class Kickstarter {
                 e.printStackTrace();
             }
         }
+    }
+
+    private boolean chooseProject(Project[] foundedProjects, int projectIndex) {
+        if (projectIndex < 0 || projectIndex >= foundedProjects.length) {
+            System.out.println("Wrong number of project, Please, try again!");
+            return true;
+        }
+        return false;
     }
 
     private void askProject(Project[] foundedProjects) {
@@ -61,11 +68,8 @@ public class Kickstarter {
         Project[] selectedProjects = projects.getProjects(category);
         int j = 1;
         for (int i = 0; i < selectedProjects.length; i++) {
-            System.out.println(j++ + ": " + selectedProjects[i]);
-
-        }
-        for (Project project : selectedProjects) {
-            printProject(project);
+            System.out.print(j++ + ": ");
+            printProject(selectedProjects[i]);
         }
         return selectedProjects;
     }
@@ -100,7 +104,7 @@ public class Kickstarter {
     }
 
     private Category chooseCategory(int index) {
-        if(index <= 0 || index > categories.size()) {
+        if (index <= 0 || index > categories.size()) {
             System.out.println("Wrong number of category, Please, try again!");
             return null;
         }
