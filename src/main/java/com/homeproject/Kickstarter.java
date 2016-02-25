@@ -18,37 +18,41 @@ public class Kickstarter {
         printQuote();
 
         while (true) {
-            System.out.println("Please, select category:");
-            System.out.println(Arrays.toString(categories.getCategories()));
-
             try {
+                askCategory();
                 int categoryIndex = selectMenu();
-                Category categoryName = categories.chooseCategory(categoryIndex);
-                Project[] selectedProjects = projects.getProjects(categoryName);
-
-                printProject(selectedProjects);
+                Category category = categories.chooseCategory(categoryIndex);
 
                 System.out.println("Please, select project:");
-                System.out.println(Arrays.toString(projects.getProjects()));
+                Project[] selectedProjects = printProjects(category);
 
-                categoryIndex = selectMenu();
-
-                System.out.println(selectedProjects[categoryIndex]);
-
-
+                int projectIndex = selectMenu();
+                Project project = selectedProjects[projectIndex];
+                System.out.println(project);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
 
-    private void printProject(Project[] projects) {
-        for (Project project : projects) {
-            System.out.println("Project name: " + project.getName());
-            System.out.println("About: " + project.getDescription());
-            System.out.println("Sum of project: " + project.getAmount());
-            System.out.println("Sum exist: " + project.getSumExist() + "\n");
+    private Project[] printProjects(Category category) {
+        Project[] selectedProjects = projects.getProjects(category);
+        for (Project project : selectedProjects) {
+            printProject(project);
         }
+        return selectedProjects;
+    }
+
+    private void askCategory() {
+        System.out.println("Please, select category:");
+        System.out.println(Arrays.toString(categories.getCategories()));
+    }
+
+    private void printProject(Project project) {
+        System.out.println("Project name: " + project.getName());
+        System.out.println("About: " + project.getDescription());
+        System.out.println("Sum of project: " + project.getAmount());
+        System.out.println("Sum exist: " + project.getSumExist() + "\n");
     }
 
 
