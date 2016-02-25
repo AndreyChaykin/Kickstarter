@@ -22,16 +22,12 @@ public class Kickstarter {
                 askCategory();
                 int categoryIndex = selectMenu();
                 Category category = chooseCategory(categoryIndex);
-                Project[] selectedProjects = printProjects(category);
+                Project[] foundedProjects = printProjects(category);
                 while (true) {
-                    askProject();
-                    System.out.println("Please, select project");
-
+                    askProject(foundedProjects);
                     int projectIndex = selectMenu();
-                    Project project = chooseProject(projectIndex);
-
-                    printProject(project);
-
+                    Project project = foundedProjects[projectIndex];
+                    chooseProject(project);
                     printProjectDetail(project);
                 }
 //                Project[] selectedProjects = printProjects(category);
@@ -44,9 +40,12 @@ public class Kickstarter {
         }
     }
 
-    private void askProject() {
-        System.out.println("Please, select category:");
-        System.out.println(Arrays.toString(categories.getCategories()));
+    private void askProject(Project[] foundedProjects) {
+        System.out.println("Please, select project:");
+        for (int i = 0; i < foundedProjects.length; i++) {
+            System.out.println(i + ": " + foundedProjects[i]);
+        }
+//  System.out.println(Arrays.toString(projects.getProjects()));
     }
 
     private void printProjectDetail(Project project) {
@@ -86,10 +85,8 @@ public class Kickstarter {
         return Integer.parseInt(bf.readLine());
     }
 
-    private Project chooseProject(int index) {
-        System.out.println("You have been select:");
-        Project project = projects.getProject(index);
-        return project;
+    private void chooseProject(Project projects) {
+        System.out.println("You have been select: " + projects.getName());
     }
 
     private Category chooseCategory(int index) {
