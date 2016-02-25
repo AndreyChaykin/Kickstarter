@@ -21,14 +21,21 @@ public class Kickstarter {
             try {
                 askCategory();
                 int categoryIndex = selectMenu();
-                Category category = categories.chooseCategory(categoryIndex);
+                Category category = chooseCategory(categoryIndex);
 
-                System.out.println("Please, select project:");
-                Project[] selectedProjects = printProjects(category);
+                printProjects(category);
+                while (true) {
+                    System.out.println("Please, select project:");
+                    int projectIndex = selectMenu();
+                    Project project = chooseProject(projectIndex);
 
-                int projectIndex = selectMenu();
-                Project project = selectedProjects[projectIndex];
-                System.out.println(project);
+                    printProject(project);
+
+                }
+//                Project[] selectedProjects = printProjects(category);
+//                int projectIndex = selectMenu();
+//                Project project = selectedProjects[projectIndex];
+//                System.out.println(project);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -60,9 +67,20 @@ public class Kickstarter {
         System.out.println(new QuoteGenerator().nextQuote());
     }
 
-
     private int selectMenu() throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         return Integer.parseInt(bf.readLine());
+    }
+
+    private Project chooseProject(int index) {
+        System.out.println("You have been select:");
+        Project project = projects.getProject(index);
+        return project;
+    }
+
+    private Category chooseCategory(int index) {
+        System.out.println("You have been select:");
+        Category category = categories.getCategory(index);
+        return category;
     }
 }

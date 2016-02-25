@@ -31,4 +31,8 @@ public class Projects {
     public Project[] getProjects() {
         return projects;
     }
+
+    public Project getProject(int projectIndex) {
+        return projects[projectIndex];
+    }
 }

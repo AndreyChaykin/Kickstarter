@@ -10,7 +10,7 @@ public class Categories {
         count++;
     }
 
-    public Category chooseCategory(int index) {
+    public Category getCategory(int index) {
         return categories[index];
     }
 
