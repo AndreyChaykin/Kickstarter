@@ -26,22 +26,26 @@ public class Kickstarter {
                     continue;
                 }
                 Project[] foundedProjects = printProjects(category);
-                while (true) {
-                    askProject(foundedProjects);
-                    int projectIndex = selectMenu();
-                    if(projectIndex == 0) {
-                        break;
-                    }
-                    if (chooseProject(foundedProjects, projectIndex)) {
-                        continue;
-                    }
-                    Project project = foundedProjects[projectIndex];
-                    chooseProject(project);
-                    printProjectDetail(project);
-                }
+                projectMenu(foundedProjects);
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    private void projectMenu(Project[] foundedProjects) throws IOException {
+        while (true) {
+            askProject(foundedProjects);
+            int projectIndex = selectMenu();
+            if(projectIndex == 0) {
+                break;
+            }
+            if (chooseProject(foundedProjects, projectIndex)) {
+                continue;
+            }
+            Project project = foundedProjects[projectIndex];
+            chooseProject(project);
+            printProjectDetail(project);
         }
     }
 
@@ -54,6 +58,9 @@ public class Kickstarter {
     }
 
     private void askProject(Project[] foundedProjects) {
+        if(foundedProjects.length == 0) {
+            System.out.println("There is no projects in this category. Enter \'0\' for exit");
+        }
         System.out.println("Please, select project:");
         for (int i = 0; i < foundedProjects.length; i++) {
             System.out.println(i + ": " + foundedProjects[i]);
