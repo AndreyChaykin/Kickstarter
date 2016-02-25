@@ -59,6 +59,11 @@ public class Kickstarter {
 
     private Project[] printProjects(Category category) {
         Project[] selectedProjects = projects.getProjects(category);
+        int j = 1;
+        for (int i = 0; i < selectedProjects.length; i++) {
+            System.out.println(j++ + ": " + selectedProjects[i]);
+
+        }
         for (Project project : selectedProjects) {
             printProject(project);
         }
@@ -67,7 +72,10 @@ public class Kickstarter {
 
     private void askCategory() {
         System.out.println("Please, select category:");
-        System.out.println(Arrays.toString(categories.getCategories()));
+        int j = 1;
+        for (int i = 0; i < categories.size(); i++) {
+            System.out.println(j++ + ": " + categories.getCategories()[i]);
+        }
     }
 
     private void printProject(Project project) {
@@ -92,11 +100,11 @@ public class Kickstarter {
     }
 
     private Category chooseCategory(int index) {
-        if(index < 0 || index >= categories.size()) {
-            System.out.println("Wrong number of project, Please, try again!");
+        if(index <= 0 || index > categories.size()) {
+            System.out.println("Wrong number of category, Please, try again!");
             return null;
         }
-        Category result = categories.getCategory(index);
+        Category result = categories.getCategory(index - 1);
         System.out.println("You have been select: " + result);
         return result;
     }
