@@ -29,6 +29,9 @@ public class Kickstarter {
                 while (true) {
                     askProject(foundedProjects);
                     int projectIndex = selectMenu();
+                    if(projectIndex == 0) {
+                        break;
+                    }
                     if (chooseProject(foundedProjects, projectIndex)) {
                         continue;
                     }
