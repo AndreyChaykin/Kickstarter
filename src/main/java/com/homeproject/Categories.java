@@ -10,8 +10,8 @@ public class Categories {
         count++;
     }
 
-    public String getName(int index) {
-        return categories[index].getName();
+    public Category chooseCategory(int index) {
+        return categories[index];
     }
 
     public Category[] getCategories() {
@@ -19,12 +19,5 @@ public class Categories {
     }
 
 
-    public Category getCategoryByName(String name) {
-        for (int i = 0; i < categories.length; i++) {
-            if (categories[i].getName().equals(name)) {
-                return categories[i];
-            }
-        }
-        return null;
-    }
+
 }

@@ -16,20 +16,34 @@ public class Kickstarter {
 
     public void run() {
         printQuote();
-        System.out.println("Please, make choice:");
-        System.out.println(Arrays.toString(categories.getCategories()));
 
-        int index = 0;
-        try {
-            index = enterNumber();
-        } catch (IOException e) {
-            e.printStackTrace();
+        while (true) {
+            System.out.println("Please, select category:");
+            System.out.println(Arrays.toString(categories.getCategories()));
+
+            try {
+                int categoryIndex = selectMenu();
+                Category categoryName = categories.chooseCategory(categoryIndex);
+                Project[] selectedProjects = projects.getProjects(categoryName);
+
+                printProject(selectedProjects);
+
+                System.out.println("Please, select project:");
+                System.out.println(Arrays.toString(projects.getProjects()));
+
+                categoryIndex = selectMenu();
+
+                System.out.println(selectedProjects[categoryIndex]);
+
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-        String categoryName = categories.getName(index);
-        Category category = categories.getCategoryByName(categoryName);
-        Project[] selectedProjects = projects.getProjects(category);
+    }
 
-        for (Project project : selectedProjects) {
+    private void printProject(Project[] projects) {
+        for (Project project : projects) {
             System.out.println("Project name: " + project.getName());
             System.out.println("About: " + project.getDescription());
             System.out.println("Sum of project: " + project.getAmount());
@@ -43,7 +57,7 @@ public class Kickstarter {
     }
 
 
-    private int enterNumber() throws IOException {
+    private int selectMenu() throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         return Integer.parseInt(bf.readLine());
     }
