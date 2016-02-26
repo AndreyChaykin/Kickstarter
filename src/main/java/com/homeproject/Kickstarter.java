@@ -1,8 +1,6 @@
 package com.homeproject;
 
-
 import java.io.*;
-import java.util.Arrays;
 
 public class Kickstarter {
 
@@ -98,7 +96,6 @@ public class Kickstarter {
         System.out.println("Sum of project: " + project.getAmount());
         System.out.println("Sum exist: " + project.getSumExist());
     }
-
 
     private void printQuote() {
         System.out.println(new QuoteGenerator().nextQuote());
