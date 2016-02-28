@@ -10,7 +10,6 @@ public class Projects {
         count++;
     }
 
-
     public Project[] getProjects(Category category) {
         Project[] tmpResult = new Project[projects.length];
         int found = 0;

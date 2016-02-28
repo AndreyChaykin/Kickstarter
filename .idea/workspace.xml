@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2421e0a7-f287-491f-b18a-66850fed918f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/homeproject/QuoteGeneratorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homeproject/Category.java" afterPath="$PROJECT_DIR$/src/main/java/com/homeproject/Category.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/homeproject/CategoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/homeproject/CategoryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homeproject/QuoteGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/com/homeproject/QuoteGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/homeproject/ProjectsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/homeproject/CategoriesTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/homeproject/CategoriesTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homeproject/Project.java" afterPath="$PROJECT_DIR$/src/main/java/com/homeproject/Project.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homeproject/Projects.java" afterPath="$PROJECT_DIR$/src/main/java/com/homeproject/Projects.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/homeproject/QuoteGeneratorTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/homeproject/QuoteGeneratorTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kickstarter.iws" />
@@ -25,6 +26,9 @@
       <FILTER>com.homeproject.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/kickstarter$CategoryTest.coverage" NAME="CategoryTest Coverage Results" MODIFIED="1456693555705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.homeproject.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/kickstarter$ProjectsTest.coverage" NAME="ProjectsTest Coverage Results" MODIFIED="1456702756240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.homeproject.*</FILTER>
     </SUITE>
   </component>
@@ -63,37 +67,20 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/Projects.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+              <folding>
+                <element signature="e#811#812#0" expanded="true" />
+                <element signature="e#842#843#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Project.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/Project.java">
+      <file leaf-file-name="CategoriesTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/homeproject/CategoriesTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuoteGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/QuoteGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoryTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/homeproject/CategoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+              <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,15 +88,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuoteGeneratorTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/homeproject/QuoteGeneratorTest.java">
+      <file leaf-file-name="Categories.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/Categories.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6854839">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.3279743">
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#234#235#0" expanded="true" />
-                <element signature="e#291#292#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#387#388#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,17 +124,18 @@
         <option value="$PROJECT_DIR$/src/main/java/QuoteRandom.java" />
         <option value="$PROJECT_DIR$/src/main/java/Kickstarter.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homeproject/Projects.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homeproject/Project.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homeproject/KickstarterRunner.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homeproject/Categories.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homeproject/CategoriesTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homeproject/Category.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homeproject/QuoteGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homeproject/Kickstarter.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/homeproject/CategoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/homeproject/QuoteGeneratorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homeproject/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homeproject/Categories.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/homeproject/CategoriesTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homeproject/Projects.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/homeproject/ProjectsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homeproject/Project.java" />
       </list>
     </option>
   </component>
@@ -311,8 +298,8 @@
       <recent name="com.homeproject" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CategoryTest.getNameCheckDiffTest">
-    <configuration default="false" name="CategoriesTest.sizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ProjectsTest">
+    <configuration default="false" name="ProjectsTest.getProjectsByExistCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.homeproject.*" />
@@ -323,8 +310,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.homeproject" />
-      <option name="MAIN_CLASS_NAME" value="com.homeproject.CategoriesTest" />
-      <option name="METHOD_NAME" value="sizeTest" />
+      <option name="MAIN_CLASS_NAME" value="com.homeproject.ProjectsTest" />
+      <option name="METHOD_NAME" value="getProjectsByExistCategory" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -338,7 +325,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CategoryTest.getNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ProjectsTest.getProjectsListWhenThereIsNoProjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.homeproject.*" />
@@ -349,8 +336,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.homeproject" />
-      <option name="MAIN_CLASS_NAME" value="com.homeproject.CategoryTest" />
-      <option name="METHOD_NAME" value="getNameTest" />
+      <option name="MAIN_CLASS_NAME" value="com.homeproject.ProjectsTest" />
+      <option name="METHOD_NAME" value="getProjectsListWhenThereIsNoProjects" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -364,7 +351,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CategoryTest.getNameCheckDiffTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ProjectsTest.addNewProjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.homeproject.*" />
@@ -375,8 +362,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.homeproject" />
-      <option name="MAIN_CLASS_NAME" value="com.homeproject.CategoryTest" />
-      <option name="METHOD_NAME" value="getNameCheckDiffTest" />
+      <option name="MAIN_CLASS_NAME" value="com.homeproject.ProjectsTest" />
+      <option name="METHOD_NAME" value="addNewProjectTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -390,7 +377,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ProjectsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.homeproject.*" />
@@ -401,7 +388,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.homeproject" />
-      <option name="MAIN_CLASS_NAME" value="com.homeproject.CategoryTest" />
+      <option name="MAIN_CLASS_NAME" value="com.homeproject.ProjectsTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -416,7 +403,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="QuoteGeneratorTest.nextQouteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ProjectsTest.getProjectsListWhenThereIsNoProjectsInSuchCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.homeproject.*" />
@@ -427,8 +414,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.homeproject" />
-      <option name="MAIN_CLASS_NAME" value="com.homeproject.QuoteGeneratorTest" />
-      <option name="METHOD_NAME" value="nextQouteTest" />
+      <option name="MAIN_CLASS_NAME" value="com.homeproject.ProjectsTest" />
+      <option name="METHOD_NAME" value="getProjectsListWhenThereIsNoProjectsInSuchCategory" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -692,19 +679,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CategoriesTest.sizeTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CategoryTest.getNameTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CategoryTest.getNameCheckDiffTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CategoryTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.QuoteGeneratorTest.nextQouteTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ProjectsTest.getProjectsByExistCategory" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ProjectsTest.getProjectsListWhenThereIsNoProjects" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ProjectsTest.addNewProjectTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ProjectsTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ProjectsTest.getProjectsListWhenThereIsNoProjectsInSuchCategory" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CategoryTest.getNameCheckDiffTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.QuoteGeneratorTest.nextQouteTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CategoryTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CategoryTest.getNameTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CategoriesTest.sizeTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ProjectsTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ProjectsTest.getProjectsListWhenThereIsNoProjectsInSuchCategory" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ProjectsTest.addNewProjectTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ProjectsTest.getProjectsByExistCategory" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ProjectsTest.getProjectsListWhenThereIsNoProjects" />
       </list>
     </recent_temporary>
   </component>
@@ -726,7 +713,7 @@
       <workItem from="1456335910250" duration="1200000" />
       <workItem from="1456416379478" duration="16154000" />
       <workItem from="1456591773657" duration="1859000" />
-      <workItem from="1456687868673" duration="5807000" />
+      <workItem from="1456687868673" duration="9781000" />
     </task>
     <task id="LOCAL-00001" summary="test2">
       <created>1456207892047</created>
@@ -896,38 +883,44 @@
       <option name="project" value="LOCAL" />
       <updated>1456691619507</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="add QuoteGeneratorTest&#10;need refactoring for testing">
+      <created>1456693728366</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1456693728366</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50838000" />
+    <option name="totallyTimeSpent" value="54812000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.318569" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.318569" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20102215" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17776097" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42248723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28517398" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14599092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43611583" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1009,16 +1002,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/Kickstarter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#3327#3328#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/KickstarterRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1031,7 +1014,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1088,7 +1074,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1145,7 +1134,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1202,7 +1194,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1251,7 +1246,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1383,59 +1381,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/KickstarterRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/homeproject/CategoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/homeproject/CategoriesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8610354">
-          <caret line="64" column="35" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#231#232#0" expanded="false" />
+            <element signature="e#278#279#0" expanded="false" />
+            <element signature="e#469#470#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
+            <element signature="e#580#581#0" expanded="false" />
+            <element signature="e#611#612#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/Project.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/homeproject/QuoteGeneratorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/Projects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09264305">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/Categories.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5095368">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
           <folding>
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#161#162#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1450,6 +1418,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/KickstarterRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/QuoteGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1458,24 +1434,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/homeproject/CategoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/homeproject/CategoriesTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/homeproject/QuoteGeneratorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/homeproject/ProjectsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6854839">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state vertical-scroll-proportion="-2.4482758">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/Projects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <folding>
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6012862">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/Categories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3279743">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding>
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
           </folding>
         </state>
       </provider>
