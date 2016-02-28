@@ -20,6 +20,9 @@ public class Categories {
 
 
     public int size() {
-        return count-1;
+        if(count == 0) {
+            return 0;
+        }
+        return count;
     }
 }
