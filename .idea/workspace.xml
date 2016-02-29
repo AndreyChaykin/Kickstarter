@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2421e0a7-f287-491f-b18a-66850fed918f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homeproject/Kickstarter.java" afterPath="$PROJECT_DIR$/src/main/java/com/homeproject/Kickstarter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homeproject/KickstarterRunner.java" afterPath="$PROJECT_DIR$/src/main/java/com/homeproject/KickstarterRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homeproject/QuoteGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/com/homeproject/QuoteGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/homeproject/QuoteGeneratorTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/homeproject/QuoteGeneratorTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kickstarter.iws" />
@@ -745,7 +741,7 @@
       <workItem from="1456335910250" duration="1200000" />
       <workItem from="1456416379478" duration="16154000" />
       <workItem from="1456591773657" duration="1859000" />
-      <workItem from="1456687868673" duration="12175000" />
+      <workItem from="1456687868673" duration="12262000" />
     </task>
     <task id="LOCAL-00001" summary="test2">
       <created>1456207892047</created>
@@ -927,15 +923,21 @@
       <option name="project" value="LOCAL" />
       <updated>1456702851061</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="add tests for quote generator class, extract DI random field in qoutegenerator class">
+      <created>1456706661270</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1456706661270</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57206000" />
+    <option name="totallyTimeSpent" value="57293000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1003,7 +1005,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test2" />
     <MESSAGE value="change package" />
     <MESSAGE value="add Category and Categories classes" />
     <MESSAGE value="create project class" />
@@ -1028,7 +1029,8 @@
     <MESSAGE value="complete Categories test" />
     <MESSAGE value="add QuoteGeneratorTest&#10;need refactoring for testing" />
     <MESSAGE value="create Projects test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="create Projects test cases" />
+    <MESSAGE value="add tests for quote generator class, extract DI random field in qoutegenerator class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tests for quote generator class, extract DI random field in qoutegenerator class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
