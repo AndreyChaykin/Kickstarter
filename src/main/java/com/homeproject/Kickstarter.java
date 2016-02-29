@@ -1,6 +1,7 @@
 package com.homeproject;
 
 import java.io.*;
+import java.util.Random;
 
 public class Kickstarter {
 
@@ -98,7 +99,7 @@ public class Kickstarter {
     }
 
     private void printQuote() {
-        System.out.println(new QuoteGenerator().nextQuote());
+        System.out.println(new QuoteGenerator(new Random()).nextQuote());
     }
 
     private int selectMenu() throws IOException {
