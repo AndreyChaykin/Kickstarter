@@ -2,7 +2,6 @@ package com.homeproject;
 
 public class KickstarterRunner {
     public static void main(String[] args) {
-//4305
         Category categoryOne = new Category("Photo");
         Category categoryTwo = new Category("Video");
         Category categoryThree = new Category("Music");
