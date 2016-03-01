@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2421e0a7-f287-491f-b18a-66850fed918f" name="Default" comment="put constructor DI for IO in Kickstarter">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homeproject/IO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/homeproject/CategoriesTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/homeproject/CategoriesTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homeproject/ConsoleIO.java" afterPath="$PROJECT_DIR$/src/main/java/com/homeproject/ConsoleIO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homeproject/Kickstarter.java" afterPath="$PROJECT_DIR$/src/main/java/com/homeproject/Kickstarter.java" />
+    <list default="true" id="2421e0a7-f287-491f-b18a-66850fed918f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homeproject/KickstarterRunner.java" afterPath="$PROJECT_DIR$/src/main/java/com/homeproject/KickstarterRunner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kickstarter.iws" />
@@ -40,10 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Kickstarter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Kickstarter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/Kickstarter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.5026882">
+            <state vertical-scroll-proportion="0.0">
               <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
               <folding>
                 <element signature="e#3071#3072#0" expanded="true" />
@@ -65,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KickstarterRunner.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="KickstarterRunner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/KickstarterRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.81938326">
+              <caret line="28" column="87" selection-start-line="28" selection-start-column="87" selection-end-line="28" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -189,11 +186,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/homeproject/Project.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homeproject/QuoteGenerator.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/homeproject/QuoteGeneratorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homeproject/KickstarterRunner.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homeproject/ConsoleIO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homeproject/IO.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/homeproject/CategoriesTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homeproject/Kickstarter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homeproject/KickstarterRunner.java" />
       </list>
     </option>
   </component>
@@ -772,7 +769,7 @@
       <workItem from="1456591773657" duration="1859000" />
       <workItem from="1456687868673" duration="12322000" />
       <workItem from="1456806252173" duration="1052000" />
-      <workItem from="1456858106099" duration="3102000" />
+      <workItem from="1456858106099" duration="3159000" />
     </task>
     <task id="LOCAL-00001" summary="test2">
       <created>1456207892047</created>
@@ -984,25 +981,31 @@
       <option name="project" value="LOCAL" />
       <updated>1456864486394</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="put constructor DI for IO in Kickstarter">
+      <created>1456865333464</created>
+      <option name="number" value="00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1456865333464</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61507000" />
+    <option name="totallyTimeSpent" value="61564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.318569" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.318569" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20102215" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17887564" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17887564" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14599092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1400,14 +1403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/KickstarterRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/Project.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1477,7 +1472,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/Kickstarter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5026882">
+        <state vertical-scroll-proportion="0.0">
           <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
           <folding>
             <element signature="e#3071#3072#0" expanded="true" />
@@ -1485,6 +1480,14 @@
             <element signature="e#3195#3196#0" expanded="true" />
             <element signature="e#3268#3269#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homeproject/KickstarterRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.81938326">
+          <caret line="28" column="87" selection-start-line="28" selection-start-column="87" selection-end-line="28" selection-end-column="87" />
+          <folding />
         </state>
       </provider>
     </entry>

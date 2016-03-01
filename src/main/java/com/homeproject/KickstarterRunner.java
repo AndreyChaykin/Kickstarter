@@ -26,7 +26,7 @@ public class KickstarterRunner {
         projects.add(projectTwo);
         projects.add(projectThree);
 
-        Kickstarter application = new Kickstarter(categories, projects);
+        Kickstarter application = new Kickstarter(categories, projects, new ConsoleIO());
 
         application.run();
 
