@@ -2,16 +2,17 @@ package com.homeproject;
 
 import java.io.*;
 import java.util.Random;
-import java.util.Scanner;
 
 public class Kickstarter {
 
+    private final ConsoleIO io;
     private Categories categories;
     private Projects projects;
 
     public Kickstarter(Categories categories, Projects projects) {
         this.categories = categories;
         this.projects = projects;
+        io = new ConsoleIO();
     }
 
     public void run() {
@@ -20,7 +21,7 @@ public class Kickstarter {
         while (true) {
             try {
                 askCategory();
-                int categoryIndex = selectMenu();
+                int categoryIndex = io.read();
                 Category category = chooseCategory(categoryIndex);
                 if (category == null) {
                     continue;
@@ -36,7 +37,7 @@ public class Kickstarter {
     private void projectMenu(Project[] foundedProjects) throws IOException {
         while (true) {
             askProject(foundedProjects);
-            int projectIndex = selectMenu();
+            int projectIndex = io.read();
             if(projectIndex == 0) {
                 break;
             }
@@ -51,31 +52,27 @@ public class Kickstarter {
 
     private boolean chooseProject(Project[] foundedProjects, int projectIndex) {
         if (projectIndex < 0 || projectIndex >= foundedProjects.length) {
-            println("Wrong number of project, Please, try again!");
+            io.println("Wrong number of project, Please, try again!");
             return true;
         }
         return false;
     }
 
-    private void println(String message) {
-        System.out.println(message);
-    }
-
     private void askProject(Project[] foundedProjects) {
         if(foundedProjects.length == 0) {
-            println("There is no projects in this category. Enter \'0\' for exit");
+            io.println("There is no projects in this category. Enter \'0\' for exit");
         }
-        println("Please, select project:");
+        io.println("Please, select project:");
         for (int i = 0; i < foundedProjects.length; i++) {
-            println(i + ": " + foundedProjects[i]);
+            io.println(i + ": " + foundedProjects[i]);
         }
     }
 
     private void printProjectDetail(Project project) {
         printProject(project);
-        println(project.getHistory());
-        println(project.getDemoVideo());
-        println(project.getQuestionAnswers() + "\n");
+        io.println(project.getHistory());
+        io.println(project.getDemoVideo());
+        io.println(project.getQuestionAnswers() + "\n");
     }
 
     private Project[] printProjects(Category category) {
@@ -89,7 +86,7 @@ public class Kickstarter {
     }
 
     private void askCategory() {
-        println("Please, select category:");
+        io.println("Please, select category:");
         int j = 1;
         for (int i = 0; i < categories.size(); i++) {
             System.out.println(j++ + ": " + categories.getCategories()[i]);
@@ -97,32 +94,27 @@ public class Kickstarter {
     }
 
     private void printProject(Project project) {
-        println("Project name: " + project.getName());
-        println("About: " + project.getDescription());
-        println("Sum of project: " + project.getAmount());
-        println("Sum exist: " + project.getSumExist());
+        io.println("Project name: " + project.getName());
+        io.println("About: " + project.getDescription());
+        io.println("Sum of project: " + project.getAmount());
+        io.println("Sum exist: " + project.getSumExist());
     }
 
     private void printQuote() {
-        println(new QuoteGenerator(new Random()).nextQuote());
-    }
-
-    private int selectMenu() throws IOException {
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextInt();
+        io.println(new QuoteGenerator(new Random()).nextQuote());
     }
 
     private void chooseProject(Project projects) {
-        println("You have been select: " + projects.getName());
+        io.println("You have been select: " + projects.getName());
     }
 
     private Category chooseCategory(int index) {
         if (index <= 0 || index > categories.size()) {
-            println("Wrong number of category, Please, try again!");
+            io.println("Wrong number of category, Please, try again!");
             return null;
         }
         Category result = categories.getCategory(index - 1);
-        println("You have been select: " + result);
+        io.println("You have been select: " + result);
         return result;
     }
 }
