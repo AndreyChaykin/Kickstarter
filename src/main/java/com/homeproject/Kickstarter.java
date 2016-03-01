@@ -84,7 +84,7 @@ public class Kickstarter {
     }
 
     private void askCategory() {
-        io.println("Please, select category:");
+        io.println("Please, select category or \"0\" for exit:");
         int j = 1;
         for (int i = 0; i < categories.size(); i++) {
             System.out.println(j++ + ": " + categories.getCategories()[i]);
