@@ -18,14 +18,17 @@ public class Kickstarter {
         printQuote();
 
         while (true) {
-                askCategory();
-                int categoryIndex = io.read();
-                Category category = chooseCategory(categoryIndex);
-                if (category == null) {
-                    continue;
-                }
-                Project[] foundedProjects = printProjects(category);
-                projectMenu(foundedProjects);
+            askCategory();
+            int categoryIndex = io.read();
+            if (categoryIndex == 0) {
+                break;
+            }
+            Category category = chooseCategory(categoryIndex);
+            if (category == null) {
+                continue;
+            }
+            Project[] foundedProjects = printProjects(category);
+            projectMenu(foundedProjects);
         }
     }
 
@@ -33,7 +36,7 @@ public class Kickstarter {
         while (true) {
             askProject(foundedProjects);
             int projectIndex = io.read();
-            if(projectIndex == 0) {
+            if (projectIndex == 0) {
                 break;
             }
             if (chooseProject(foundedProjects, projectIndex)) {
@@ -54,7 +57,7 @@ public class Kickstarter {
     }
 
     private void askProject(Project[] foundedProjects) {
-        if(foundedProjects.length == 0) {
+        if (foundedProjects.length == 0) {
             io.println("There is no projects in this category. Enter \'0\' for exit");
         }
         io.println("Please, select project:");
