@@ -2,6 +2,7 @@ package com.homeproject;
 
 import java.io.*;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Kickstarter {
 
@@ -107,8 +108,8 @@ public class Kickstarter {
     }
 
     private int selectMenu() throws IOException {
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        return Integer.parseInt(bf.readLine());
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextInt();
     }
 
     private void chooseProject(Project projects) {
