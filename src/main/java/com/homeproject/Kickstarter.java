@@ -1,25 +1,23 @@
 package com.homeproject;
 
-import java.io.*;
 import java.util.Random;
 
 public class Kickstarter {
 
-    private final ConsoleIO io;
+    private final IO io;
     private Categories categories;
     private Projects projects;
 
-    public Kickstarter(Categories categories, Projects projects) {
+    public Kickstarter(Categories categories, Projects projects, IO io) {
         this.categories = categories;
         this.projects = projects;
-        io = new ConsoleIO();
+        this.io = io;
     }
 
     public void run() {
         printQuote();
 
         while (true) {
-            try {
                 askCategory();
                 int categoryIndex = io.read();
                 Category category = chooseCategory(categoryIndex);
@@ -28,13 +26,10 @@ public class Kickstarter {
                 }
                 Project[] foundedProjects = printProjects(category);
                 projectMenu(foundedProjects);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
     }
 
-    private void projectMenu(Project[] foundedProjects) throws IOException {
+    private void projectMenu(Project[] foundedProjects) {
         while (true) {
             askProject(foundedProjects);
             int projectIndex = io.read();
@@ -78,9 +73,9 @@ public class Kickstarter {
     private Project[] printProjects(Category category) {
         Project[] selectedProjects = projects.getProjects(category);
         int j = 1;
-        for (int i = 0; i < selectedProjects.length; i++) {
+        for (Project project : selectedProjects) {
             System.out.print(j++ + ": ");
-            printProject(selectedProjects[i]);
+            printProject(project);
         }
         return selectedProjects;
     }

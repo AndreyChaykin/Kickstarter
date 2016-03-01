@@ -1,17 +1,14 @@
 package com.homeproject;
 
-import java.io.IOException;
 import java.util.Scanner;
 
-public class ConsoleIO {
-    public ConsoleIO() {
-    }
+public class ConsoleIO implements IO {
 
-    void println(String message) {
+    public void println(String message) {
         System.out.println(message);
     }
 
-    int read() throws IOException {
+    public int read() {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
     }
