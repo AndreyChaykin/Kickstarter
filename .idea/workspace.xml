@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2421e0a7-f287-491f-b18a-66850fed918f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homeproject/Kickstarter.java" afterPath="$PROJECT_DIR$/src/main/java/com/homeproject/Kickstarter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homeproject/KickstarterRunner.java" afterPath="$PROJECT_DIR$/src/main/java/com/homeproject/KickstarterRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/homeproject/KickstarterTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/homeproject/KickstarterTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kickstarter.iws" />
@@ -777,7 +774,7 @@
       <workItem from="1456591773657" duration="1859000" />
       <workItem from="1456687868673" duration="12322000" />
       <workItem from="1456806252173" duration="1052000" />
-      <workItem from="1456858106099" duration="6006000" />
+      <workItem from="1456858106099" duration="6056000" />
     </task>
     <task id="LOCAL-00001" summary="test2">
       <created>1456207892047</created>
@@ -1007,11 +1004,17 @@
       <option name="project" value="LOCAL" />
       <updated>1456871891643</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="end of very looooong day">
+      <created>1456873109638</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1456873109638</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64411000" />
+    <option name="totallyTimeSpent" value="64461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1083,7 +1086,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method for select projects by name&#10;" />
     <MESSAGE value="excluding in method find projects null elements&#10;" />
     <MESSAGE value="extract main method in new class&#10;" />
     <MESSAGE value="extract description about project in method&#10;" />
@@ -1108,7 +1110,8 @@
     <MESSAGE value="put constructor DI for IO in Kickstarter" />
     <MESSAGE value="destroy bug in constructor" />
     <MESSAGE value="create KickstarterTest and add to run method exit when user input 0" />
-    <option name="LAST_COMMIT_MESSAGE" value="create KickstarterTest and add to run method exit when user input 0" />
+    <MESSAGE value="end of very looooong day" />
+    <option name="LAST_COMMIT_MESSAGE" value="end of very looooong day" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
