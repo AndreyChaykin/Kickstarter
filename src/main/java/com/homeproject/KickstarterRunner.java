@@ -1,5 +1,7 @@
 package com.homeproject;
 
+import java.util.Random;
+
 public class KickstarterRunner {
     public static void main(String[] args) {
         //140
@@ -27,7 +29,9 @@ public class KickstarterRunner {
         projects.add(projectTwo);
         projects.add(projectThree);
 
-        Kickstarter application = new Kickstarter(categories, projects, new ConsoleIO());
+
+        Kickstarter application = new Kickstarter(categories, projects, new ConsoleIO(),
+                new QuoteGenerator(new Random()));
 
         application.run();
 

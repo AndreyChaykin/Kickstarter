@@ -1,17 +1,17 @@
 package com.homeproject;
 
-import java.util.Random;
-
 public class Kickstarter {
 
     private final IO io;
+    private final QuoteGenerator quoteGenerator;
     private Categories categories;
     private Projects projects;
 
-    public Kickstarter(Categories categories, Projects projects, IO io) {
+    public Kickstarter(Categories categories, Projects projects, IO io, QuoteGenerator quoteGenerator) {
         this.categories = categories;
         this.projects = projects;
         this.io = io;
+        this.quoteGenerator = quoteGenerator;
     }
 
     public void run() {
@@ -99,7 +99,7 @@ public class Kickstarter {
     }
 
     private void printQuote() {
-        io.println(new QuoteGenerator(new Random()).nextQuote());
+        io.println(quoteGenerator.nextQuote());
     }
 
     private void chooseProject(Project projects) {
