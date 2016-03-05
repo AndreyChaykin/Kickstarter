@@ -116,9 +116,7 @@ public class KickstarterTest {
         }
 
         public int read() {
-            int result = fakeIOConsole.remove(0);
-//            fakeIOConsole.remove(0);
-            return result;
+            return fakeIOConsole.remove(0);
         }
 
         public List<String> getMessages() {

@@ -22,4 +22,12 @@ public class Categories {
     public int size() {
         return count;
     }
+
+    Category chooseCategory(int index, Kickstarter kickstarter) {
+        if (index <= 0 || index > size()) {
+            return null;
+        }
+        Category result = getCategory(index - 1);
+        return result;
+    }
 }

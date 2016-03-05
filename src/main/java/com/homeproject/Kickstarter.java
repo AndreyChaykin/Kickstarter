@@ -27,29 +27,42 @@ public class Kickstarter {
             if (category == null) {
                 continue;
             }
-            Project[] foundedProjects = printProjects(category);
+            Project[] foundedProjects = selectProjects(category);
             projectMenu(foundedProjects);
         }
     }
 
+    private Category chooseCategory(int categoryIndex) {
+        Category result = categories.chooseCategory(categoryIndex, this);
+                if(result == null) {
+                    io.println("Wrong number of category, Please, try again!");
+                } else {
+                    io.println("You have been select: " + result);
+                }
+        return result;
+    }
+
     private void projectMenu(Project[] foundedProjects) {
         while (true) {
+            if(isProjectsExist(foundedProjects)) {
+                break;
+            }
             askProject(foundedProjects);
             int projectIndex = io.read();
             if (projectIndex == 0) {
                 break;
             }
-            if (chooseProject(foundedProjects, projectIndex)) {
+            if (chosenProject(foundedProjects, projectIndex)) {
                 continue;
             }
-            Project project = foundedProjects[projectIndex];
-            chooseProject(project);
+            Project project = foundedProjects[projectIndex - 1];
+            chosenProject(project);
             printProjectDetail(project);
         }
     }
 
-    private boolean chooseProject(Project[] foundedProjects, int projectIndex) {
-        if (projectIndex < 0 || projectIndex >= foundedProjects.length) {
+    private boolean chosenProject(Project[] foundedProjects, int projectIndex) {
+        if (projectIndex < 0 || projectIndex > foundedProjects.length) {
             io.println("Wrong number of project, Please, try again!");
             return true;
         }
@@ -57,13 +70,19 @@ public class Kickstarter {
     }
 
     private void askProject(Project[] foundedProjects) {
-        if (foundedProjects.length == 0) {
-            io.println("There is no projects in this category. Enter \'0\' for exit");
-        }
         io.println("Please, select project:");
+        int j = 1;
         for (int i = 0; i < foundedProjects.length; i++) {
-            io.println(i + ": " + foundedProjects[i]);
+            io.println(j++ + ": " + foundedProjects[i]);
         }
+    }
+
+    private boolean isProjectsExist(Project[] foundedProjects) {
+        if (foundedProjects == null || foundedProjects.length == 0) {
+            io.println("There is no projects in this category.");
+            return true;
+        }
+        return false;
     }
 
     private void printProjectDetail(Project project) {
@@ -73,14 +92,17 @@ public class Kickstarter {
         io.println(project.getQuestionAnswers() + "\n");
     }
 
-    private Project[] printProjects(Category category) {
-        Project[] selectedProjects = projects.getProjects(category);
+    private Project[] selectProjects(Category category) {
+        Project[] result = projects.getProjects(category);
+        if(result == null) {
+            return null;
+        }
         int j = 1;
-        for (Project project : selectedProjects) {
+        for (Project project : result) {
             System.out.print(j++ + ": ");
             printProject(project);
         }
-        return selectedProjects;
+        return result;
     }
 
     private void askCategory() {
@@ -102,17 +124,8 @@ public class Kickstarter {
         io.println(quoteGenerator.nextQuote());
     }
 
-    private void chooseProject(Project projects) {
+    private void chosenProject(Project projects) {
         io.println("You have been select: " + projects.getName());
     }
 
-    private Category chooseCategory(int index) {
-        if (index <= 0 || index > categories.size()) {
-            io.println("Wrong number of category, Please, try again!");
-            return null;
-        }
-        Category result = categories.getCategory(index - 1);
-        io.println("You have been select: " + result);
-        return result;
-    }
 }
